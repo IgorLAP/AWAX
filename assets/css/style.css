@@ -29,6 +29,9 @@ header{
     background-color: #b28756;
     border-radius: 40px;
 }
+.menu-opener{
+    display: none;
+}
 .menu{
     flex: 1; /* ocupando o resto do espaço onde a logo esta fixa */
     display: flex;
@@ -720,6 +723,7 @@ header{
 }
 .section-contact-us form input{
     padding: 20px 0px;
+    outline: none;
 }
 .section-contact-us form input[placeholder]{
     font-size: 11px;
@@ -806,6 +810,7 @@ header{
     width: 65%;
     font-weight: bold;
     color: #ffffff;
+    outline: none;
 }
 
 .footer_socials{
@@ -839,4 +844,282 @@ header{
     height: 50px;
     text-align: center;
     border-radius: 25px;
+}
+
+
+@media (max-width:800px) and (min-width:450px){
+    .logo{
+        margin-left: 30px;
+    }
+    .menu-opener{
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 99; /* adicionar prioridade no browser junto ao absolute*/
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 70vw;
+        height: calc(100vh - 100px); /* tirando 100px do header novamente */
+        top: 100px;
+        right: 0;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li a{
+        font-weight: bold;
+        height: 80px;
+        font-size: 27px;
+        margin-left: 30px;
+    }
+    .menu li.active a{
+        border: 0;
+        color: #b28756;
+    }
+    .section-aboutus{
+        flex-direction: column;
+    }
+    .section-aboutus--left{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .section-aboutus--right{
+        width: auto; /* ao tirar a altura o design já fica interessante e centralizado */
+    }
+    .section-services{
+        flex-wrap: wrap;
+    }
+    .section-service{
+        min-width: 50%;
+        margin-bottom: 30px;
+    }
+    .section-service:first-child{
+        border-left: 0;
+    }
+    .section-team{
+        max-width: 580px;
+    }
+    .companies{
+        flex-wrap: wrap;
+    }
+    .companies img{
+        margin-bottom: 50px;
+    }
+    .section-price{
+        min-width: 50%;
+        flex-wrap: wrap;
+    }
+    .section-price .price-card{
+        width: 280px;
+        margin-bottom: 20px;
+    }
+    
+    .section-premium .premium-slide{
+        flex-direction: column;
+    }
+    .premium-slide_right{
+        margin-top: 50px;
+        width: 450px
+    }
+    .section-facts{
+        flex-wrap: wrap;
+    }
+    .section-fact{
+        min-width: 50%;
+        margin-bottom: 30px
+    }
+    .tellabout{
+        font-size: 11px;
+        margin-right: 25px;
+    }
+    .social{
+        margin-right: 11px;
+    }
+    .section-map{
+        padding-left:30px;
+        padding-right: 30px; 
+    }
+    .section-map--area{
+        width: auto;
+    }
+    .section-map--info{
+        width: auto;
+    }
+    .section-map--info-item{
+        margin-bottom: 20px;
+    }
+    .section-map--info-item:last-child{
+        margin-bottom: 0;
+    }
+    .section-footer_content{
+        margin-left: 15px;
+    }
+}
+
+@media (max-width:450px){
+    .logo{
+        margin-left: 30px;
+    }
+    .menu-opener{
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 99; /* adicionar prioridade no browser junto ao absolute*/
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 80vw;
+        height: calc(100vh - 100px); /* tirando 100px do header novamente */
+        top: 100px;
+        right: 0;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li a{
+        font-weight: bold;
+        height: 60px;
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .menu li.active a{
+        border: 0;
+        color: #b28756;
+    }
+    .banner h1{
+        font-size: 30px;
+    }
+    .banner h2{
+        font-size: 17px;
+    }
+    .section-aboutus{
+        flex-direction: column;
+    }
+    .section-aboutus--left{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .section-aboutus--right{
+        width: auto; /* ao tirar a altura o design já fica interessante e centralizado */
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .section-aboutus--right img{
+        width: 100%;
+    }
+    .section-services{
+        flex-wrap: wrap;
+    }
+    .section-service{
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+    .section-service:first-child{
+        border-left: 0;
+    }
+    .section-projects--filters{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .section-projects--photo{
+        width: 320px;
+    }
+    .section-projects--photoarea{
+        width: 300px;
+        height: 190px;
+    }
+    .section-team{
+        max-width: 280px;
+    }
+    .companies img {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .section-contact-us form {
+        width: auto;
+    }
+    .section-contact-us input[placeholder="NAME"], .section-contact-us input[placeholder="EMAIL"] {
+        width: auto;
+    }
+
+
+    .section-happy-clients .slide{
+        width: 100vw;
+    }
+    .companies{
+        flex-wrap: wrap;
+    }
+    .companies img{
+        margin-bottom: 50px;
+    }
+    .section-price{
+        min-width: 50%;
+        flex-wrap: wrap;
+    }
+    .section-price .price-card{
+        width: 280px;
+        margin-bottom: 20px;
+    }
+    
+    .section-premium .premium-slide{
+        flex-direction: column;
+    }
+    .premium-slide_right{
+        margin-top: 50px;
+        width: 450px
+    }
+    .section-facts{
+        flex-wrap: wrap;
+    }
+    .section-fact{
+        min-width: 100%;
+        margin-bottom: 30px
+    }
+    .tellabout{
+        font-size: 11px;
+        margin-right: 25px;
+    }
+    .section-share{
+        flex-wrap: wrap;
+    }
+    .social{
+        margin-right: 11px;
+        padding: 10px;
+    }
+    .section-map{
+        padding: 0;
+        padding-bottom: 250px; 
+    }
+    .section-map--area{
+        width: auto;
+    }
+    .section-map--info{
+        width: auto;
+    }
+    .section-map--info-item{
+        margin-bottom: 20px;
+    }
+    .section-map--info-item:last-child{
+        margin-bottom: 0;
+    }
+    .section-footer{
+        flex-direction: column;
+    }
+    .section-footer_content{
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+    .section-footer_content span{
+        margin-top: 20px;
+    }
+    .section-footer_content form{
+        padding: 10px;
+    }
 }
