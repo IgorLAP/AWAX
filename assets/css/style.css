@@ -923,7 +923,6 @@ header{
     }
     .premium-slide_right{
         margin-top: 50px;
-        width: 450px
     }
     .section-facts{
         flex-wrap: wrap;
@@ -1121,5 +1120,24 @@ header{
     }
     .section-footer_content form{
         padding: 10px;
+    }
+}
+
+@media (min-width:320px) and (max-width:449px){
+    .section-premium .slide{
+        width: 100vw;
+    }
+    .section-premium .slidearea{
+        padding: 0;
+    }
+    .premium-slide_left{
+        display: flex;
+        justify-content: center;
+    }
+    .premium-slide_left img{
+        width: 80vw;
+    }
+    .premium-slide_right{
+        width: auto;
     }
 }
