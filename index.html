@@ -38,32 +38,38 @@
     <main>
         <section class="banner">
             <div class="sliders">
-                <div class="slide">
+                <div class="slide fade">
                     <div class="slidearea">
-                        <h1>Design is about<br><span>Communication</span></h1>
-                        <h2>Call Us: +00 0 1234 5678</h2>
-                        <a href="" class="button">Get in touch!</a>
+                        <div class="txt">
+                            <h1>Design is about<br><span>Communication</span></h1>
+                            <h2>Call Us: +00 0 1234 5678</h2>
+                            <a href="" class="button">Get in touch!</a>
+                        </div>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="slide fade">
                     <div class="slidearea">
-                        <h1>Design is about<br><span>Everything</span></h1>
-                        <h2>Call Us: +00 0 1234 5678</h2>
-                        <a href="" class="button">Get in touch!</a>
+                        <div class="txt">
+                            <h1>Design is about<br><span>Everything</span></h1>
+                            <h2>Call Us: +00 0 1234 5678</h2>
+                            <a href="" class="button">Get in touch!</a>
+                        </div>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="slide fade">
                     <div class="slidearea">
-                        <h1>Design is about<br><span>Life and beyond</span></h1>
-                        <h2>Call Us: +00 0 1234 5678</h2>
-                        <a href="" class="button">Get in touch!</a>
+                        <div class="txt">
+                            <h1>Design is about<br><span>Life!</span></h1>
+                            <h2>Call Us: +00 0 1234 5678</h2>
+                            <a href="" class="button">Get in touch!</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="sliders-pointers">
-                <div class="pointer active"></div>
-                <div class="pointer"></div>
-                <div class="pointer"></div>
+                <div class="pointer" onclick="currentSlide(1)"></div>
+                <div class="pointer" onclick="currentSlide(2)"></div>
+                <div class="pointer" onclick="currentSlide(3)"></div>
             </div>
         </section>
         <section class="default light">
@@ -335,11 +341,20 @@
                                 <div class="section-happy-review">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur odio ex, elementum at ipsum nec, consectetur sagittis augue. Ut ac felis viverra massa euismod hendrerit. Integer aliquet lacinia urna nec.</div>
                             </div>
                         </div>
+                        <div class="slide">
+                                <div class="slidearea">
+                                    <img src="media/homem2.png" alt="john doe">
+                                    <div class="section-happy-name">John Doe</div>
+                                    <div class="section-happy-role">Head of PR Department</div>
+                                    <img class="quote" src="assets/images/quote.png" alt="quote">
+                                    <div class="section-happy-review">Textinho feliz para encher linguiça e servir como terceiro slide bem legal e funcional</div>
+                                </div>
+                            </div>
                     </div>
                     <div class="sliders-pointers">
-                        <div class="pointer active"></div>
-                        <div class="pointer"></div>
-                        <div class="pointer"></div>
+                        <div class="pointer" onclick="currentSlide(1)"></div>
+                        <div class="pointer" onclick="currentSlide(2)"></div>
+                        <div class="pointer" onclick="currentSlide(3)"></div>
                     </div>  
                 </div>
             </div>
